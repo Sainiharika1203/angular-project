@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let p of wishlistitems">
+        <div class="card">
+            <div class="card-header">
+                <img [src]="p.image" alt=""  height="200" width="200"class="card-img-top">
+
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">{{p.title}}</h1>
+                <h2>price:{{p.price}}rs</h2>
+                <p>{{p.description}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger" (click)="removewishlist(p.id)" ><i class="fa fa-trash"></i></button>
+                <button class="btn btn-success" (click)="addtocart(p)" >Add to cart</button>
+                <button class="btn btn-warning"  data-bs-target="#mymodal" data-bs-toggle="modal" (click)="ordernow(p)">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="Modal-title">ORDER DETAILS</h1>
+                <button class="btn-close" data-bs-dismiss="modal" > </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="" class="form-label">PRODUCT ID </label>
+                        <input type="text" class="form-control hide" name="pid" [(ngModel)]="pid">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">PRODUCT Title </label>
+                        <input type="text" class="form-control hide" name="ptitle" [(ngModel)]="ptitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">USERNAME </label>
+                        <input type="text" class="form-control hide" name="uname" [(ngModel)]="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">PRICE </label>
+                        <input type="text" class="form-control hide" name="price" [(ngModel)]="pprice">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">ADDRESS</label>
+                        <input type="text" class="form-control" name="adr" placeholder="enter your address" [(ngModel)]="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">PAYMENT</label>
+                        <input type="text" class="form-control" name="payment" placeholder="only COD available" [(ngModel)]="payment">
+                    </div>
+                    <div class="modal-footer">  
+                        <button class="btn btn-warning" (click)="placeorder()">PLACE ORDER</button>
+                        <button cla="btn btn-target" data-bs-dismiss="modal">CANCEL</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

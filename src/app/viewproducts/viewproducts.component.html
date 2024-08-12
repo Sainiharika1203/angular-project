@@ -1,0 +1,212 @@
+<div class="row"><h1>Dessert</h1>
+
+    <div class=" col-12 col-md-4" *ngFor="let p of productlist">
+        
+        <ng-container *ngIf="p.category=='Dessert'">
+        
+            <div class="card">
+                <a (click)="details(p.id)">
+                <div class="card-header">
+                    <img [src]="p.image" alt=""  height="200" width="200" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{p.title}}</h3>
+                    <p>{{p.category}}</p>
+                    <h6>price:{{p.price}}rs(per piece)</h6>
+                    <!-- <p>{{p.description}}</p> -->
+                </div>
+            </a>
+                <div class="card-footer">
+                    <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                    <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            
+        </div>
+   
+    
+</ng-container>
+
+</div>
+</div>
+<div class="row"><h1>Cake</h1>
+
+    <div class=" col-12 col-md-4" *ngFor="let p of productlist">
+        
+        <ng-container *ngIf="p.category=='cake'">
+        
+            <div class="card">
+                <a (click)="details(p.id)">
+                <div class="card-header">
+                    <img [src]="p.image" alt=""  height="200" width="200" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{p.title}}</h3>
+                    <p>{{p.category}}</p>
+                    <h6>price:{{p.price}}rs(per piece)</h6>
+                    <!-- <p>{{p.description}}</p> -->
+                </div>
+            </a>
+                <div class="card-footer">
+                    <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                    <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            
+        </div>
+   
+    
+</ng-container>
+
+</div>
+</div>
+<div class="row"><h1>Brownie</h1>
+    <ng-container *ngFor="let p of productlist">
+    <div class="col-12 col-md-4"  *ngIf="p.category=='Brownie'">
+        
+       
+        
+            <div class="card">
+                <a (click)="details(p.id)">
+                <div class="card-header">
+                    <img [src]="p.image" alt=""  height="400" width="200" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{p.title}}</h3>
+                    <p>{{p.category}}</p>
+                    <h6>price:{{p.price}}rs(per piece)</h6>
+                    <!-- <p>{{p.description}}</p> -->
+                </div>
+            </a>
+                <div class="card-footer">
+                    <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                    <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            
+        </div>
+   
+    
+
+
+</div>
+    </ng-container>
+</div>
+<div class="row"><h1>Cake pops</h1>
+
+    <div class="col-12  col-md-4" *ngFor="let p of productlist">
+        
+        <ng-container *ngIf="p.category=='Cake Pop'">
+       
+            <div class="card">
+                <a (click)="details(p.id)">
+                <div class="card-header">
+                    <img [src]="p.image" alt=""  height="400" width="200" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{p.title}}</h3>
+                    <p>{{p.category}}</p>
+                    <h6>price:{{p.price}}rs(two pieces)</h6>
+                    <!-- <p>{{p.description}}</p> -->
+                </div>
+            </a>
+                <div class="card-footer">
+                    <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                    <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            
+        </div>
+ 
+    
+</ng-container>
+
+</div>
+</div>
+<div class="row"><h1>Cookies</h1>
+
+    <ng-container *ngFor="let p of productlist">
+        <div class=" col-12 col-md-4"  *ngIf="p.category=='Cookie'">
+           
+                <div class="card">
+                    <a (click)="details(p.id)">
+                    <div class="card-header">
+                        <img [src]="p.image" alt=""  height="400" width="200" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{p.title}}</h3>
+                        <p>{{p.category}}</p>
+                        <h6>price:{{p.price}}rs(two pieces)</h6>
+                        <!-- <p>{{p.description}}</p> -->
+                    </div>
+                </a>
+                    <div class="card-footer">
+                        <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                        <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                
+            </div>
+     
+        
+    </div>
+    </ng-container>
+   
+
+</div>
+<div class="row"><h1>Macrons</h1>
+
+    <ng-container *ngFor="let p of productlist">
+        <div class=" col-12 col-md-4"  *ngIf="p.category=='Macron'">
+           
+                <div class="card">
+                    <a (click)="details(p.id)">
+                    <div class="card-header">
+                        <img [src]="p.image" alt=""  height="400" width="200" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{p.title}}</h3>
+                        <p>{{p.category}}</p>
+                        <h6>price:{{p.price}}rs(set of 6 pieces)</h6>
+                        <!-- <p>{{p.description}}</p> -->
+                    </div>
+                </a>
+                    <div class="card-footer">
+                        <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                        <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                
+            </div>
+  
+        
+    </div>
+    </ng-container>
+   
+
+</div>
+<div class="row"><h1>Customized Cakes</h1>
+
+    <ng-container *ngFor="let p of productlist">
+        <div class=" col-12 col-md-4"  *ngIf="p.category=='Customized Cake'">
+         
+                <div class="card">
+                    <a (click)="details(p.id)">
+                    <div class="card-header">
+                        <img [src]="p.image" alt=""  height="400" width="200" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{p.title}}</h3>
+                        <p>{{p.category}}</p>
+                        <h6>price:{{p.price}}rs(KG)</h6>
+                        <!-- <p>{{p.description}}</p> -->
+                    </div>
+                </a>
+                    <div class="card-footer">
+                        <button class="btn btn-success" (click)="addtocart(p)">ADD TO CART</button>
+                        <button class="btn btn-danger" (click)="addwishlist(p)"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                
+            </div>
+ 
+        
+    </div>
+    </ng-container>
+</div>
+
+
+

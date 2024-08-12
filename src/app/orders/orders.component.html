@@ -1,0 +1,24 @@
+<!-- div class="row">
+    <div class="col-md-12">
+    </div>
+</div>< -->
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <tr>
+                <th>Sno</th>
+                <th>Title</th>
+                <th>username</th>
+                <th>address</th>
+                <th>payment-type</th>
+            </tr>
+            <tr *ngFor="let order of mypro">
+                <td>{{order.id}}</td>
+                <td>{{order.title}}</td>
+                <td>{{order.username}}</td>
+                <td>{{order.address}}</td>
+                 <td>{{order.payment}}</td> 
+            </tr>
+        </table>
+    </div>
+</div>

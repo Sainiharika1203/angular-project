@@ -1,0 +1,57 @@
+.container-fluid {
+  height: 100vh;
+  width:100%;
+  background:url("https://wallpaperaccess.com/full/1462194.jpg");
+  background-size: cover;
+  background-position:center;
+}
+form{
+  background-color: transparent;
+}
+input{
+  width:400px;
+  height:35px;
+ padding:25px;
+ text-align: center;
+ border:2px solid #DACE84;
+ color:#DACE84;
+ box-shadow: 2px 3px pink;
+}
+::placeholder{
+  color:#DACE84;
+  font-weight:bold;
+}
+.form_group{
+  padding:20px;
+}
+input:hover{
+  background-color:palevioletred;
+  border:4px solid plum;
+}
+h1{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:rgb(232, 95, 141);
+}
+h6{
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: bold;
+  color:#DACE84;
+}
+p,h4{
+  color:white;
+}
+.p1{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btn{
+ 
+  width:150px;
+  
+}
+.btn:hover{
+  background-color: palegoldenrod;
+}

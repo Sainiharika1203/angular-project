@@ -1,0 +1,23 @@
+
+<div class="container my-5">
+    <!-- Welcome Banner with Marquee Tag -->
+    <div class="jumbotron text-center my-5">
+      <marquee behavior="scroll" direction="left">
+        <h1 class="display-4">Welcome to SS HomeBakers!</h1>
+        <p class="lead">Delicious homemade baked goods made with love.</p>
+      </marquee>
+    </div>
+<div class="container my-5">
+    <!-- User Testimonials -->
+    <div class="row my-5">
+      <div class="col-md-12">
+        <h2>Customer Testimonials</h2>
+        <div *ngFor="let testimonial of testimonials" class="testimonial">
+          <blockquote class="blockquote">
+            <p class="mb-0">{{ testimonial.text }}</p>
+            <footer class="blockquote-footer">{{ testimonial.author }}</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,9 @@
+td{
+    color:palevioletred;
+}
+table{
+    border:1px solid black;
+}
+tr:nth-child(even){
+    background-color:lightgray;
+}

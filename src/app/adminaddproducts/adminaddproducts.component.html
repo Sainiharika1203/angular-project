@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" [formGroup]="productForm" (ngSubmit)="addme()">
+                <h2>ADDPRODUCT</h2>
+                <div class="form-group">
+                    <label for="" class="form-label">product id </label>
+                    <input type="text" class="form-control" formControlName="id" placeholder=" Enter id">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label"> productname</label>
+                    <input type="text" class="form-control" formControlName="title" placeholder="Enter title">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Price </label>
+                    <input type="text" class="form-control" formControlName="price" placeholder="Enter price">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label"> description</label>
+                    <input type="text" class="form-control" formControlName="description" placeholder=" Enter description">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Category </label>
+                    <input type="text" class="form-control" formControlName="Category" placeholder=" Enter Category">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Image </label>
+                    <input type="text" class="form-control" formControlName="image" placeholder=" Enter image"><br>
+                </div>
+                <div class="form-group">
+                    <button class="btn " type="submit">Addproduct</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+

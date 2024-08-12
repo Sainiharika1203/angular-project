@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-5">
+            <h1 class="d-flex justify-content-center">SS HOMEBAKERS</h1>
+            <h6 class="d-flex justify-content-center">It's Now Safe to Crave!!!</h6>
+            <form action=" " [formGroup]="loginForm">
+                <p class="title text-center">LOGIN FORM</p>
+            <div class="form_group  d-flex justify-content-center"> 
+            <input type="text"  class=" form_style  form-control " formControlName="username"  placeholder="username"   pattern="[a-zA-Z0-9]{5,}" title="if ur admin username should be admin or if ur user username should be min of 5 char"><br>
+        </div>
+        <div class="form_group  d-flex justify-content-center"> 
+            <input type="password"  class="form-control " formControlName="password" placeholder="password" pattern="[a-zA-Z0-9]{4,}" title="if ur admin password must be amin123 or if ur user password must be first four char and 123 "><br>
+        </div>
+        <div class="form_group d-flex justify-content-center"> 
+            <button type="submit" (click)="checklogin()" class="btn btn-warning" > LOGIN</button>
+                </div>
+    </form>
+        </div>
+    </div>
+</div>

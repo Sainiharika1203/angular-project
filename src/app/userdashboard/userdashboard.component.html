@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-12 col-md-12 text-pink text-center bg-dark">
+            <h1>SS&nbsp;HOMEBAKERS</h1>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-dark text-light ">
+    <button class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#myc" aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid " >
+        <div class="collapse navbar-collapse" id="myc">
+        <a href="" class="navbar-brand"> It's Now Safe to Crave</a>
+        <img [src]="imglink" height="100" width="100" alt="icon">
+        <h3>Hello, {{checkuser.username}}</h3>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link  "routerLink="/user/userhome"><i class="icon  fa-solid fa-house" ></i> HOME </a>
+                <li class="nav-item"> <a class="nav-link  "routerLink="/user/about"> <i class=" icon fa-solid fa-circle-info"></i>ABOUT </a>
+            <li class="nav-item"> <a class="nav-link " routerLink="/user/viewproducts"><i class=" icon fa-solid fa-bag-shopping"></i>PRODUCTS </a></li>
+            <li class="nav-item"> <a class="nav-link " routerLink="/user/cart"><i class="icon fa-solid fa-cart-shopping"></i>CART<span class="badge bg-danger">{{cartlen}}</span></a></li>
+            <li class="nav-item"> <a class="nav-link " routerLink="/user/wishlist"> <i class=" icon fa-regular fa-heart"></i>WISHLIST<span class="badge bg-warning">{{wishlen}}</span></a></li>
+            <li class="nav-item"> <a class="nav-link " routerLink="/user/orders"><i class="icon fa-regular fa-calendar"></i>ORDERS </a></li>
+            <li class="nav-item"> <a class="nav-link " routerLink="/user" data-bs-target="#mymodal" data-bs-toggle="modal"> LOGOUT </a></li>
+        </ul> 
+    </div>
+</div>
+</nav>
+<div class="row">
+    <router-outlet> </router-outlet>
+</div>
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h2>LOGOUT  </h2> </div>
+            <div class="modal-body">
+                <h3> Are you sure want to logout
+                </h3>
+                </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" (click)="logout()">YES</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">NO </button>
+            </div>
+        </div>
+    </div>
+</div>
+
